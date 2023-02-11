@@ -1,8 +1,12 @@
 import "./App.css";
 import { Card, Button, Form } from "react-bootstrap";
-import Cards from '../src/components/cards.js'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPlusSquare, faCreditCard } from '@fortawesome/free-regular-svg-icons'
+import Cards from "../src/components/cards.js";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faPlusSquare,
+  faCreditCard,
+} from "@fortawesome/free-regular-svg-icons";
+import ListGroup from "react-bootstrap/ListGroup";
 
 function App() {
   return (
@@ -18,22 +22,26 @@ function App() {
           <div className="col-md-5 col-lg-4 order-md-last">
             <h4 className="d-flex justify-content-between align-items-center mb-3">
               <span>The Total Amount Of</span>
-              <span className="badge bg-primary rounded-pill">2</span>
+              <span className="badge bg-primary rounded-pill">2 items</span>
             </h4>
             <ul className="list-group mb-3">
               <li className="list-group-item d-flex justify-content-between lh-sm">
-                <div>
-                  <h6 className="my-0">Product name</h6>
-                  <small className="text-muted">Brief description</small>
-                </div>
-                <span className="text-muted">$12</span>
+                  <div>
+                    <h6 className="my-0">Temporary Amount</h6>
+                  </div>
+                  <span className="text-muted">$12</span>
               </li>
               <li className="list-group-item d-flex justify-content-between lh-sm">
-                <div>
-                  <h6 className="my-0">Second product</h6>
-                  <small className="text-muted">Brief description</small>
-                </div>
-                <span className="text-muted">$8</span>
+                  <div>
+                    <h6 className="my-0">Shopping</h6>
+                  </div>
+                  <span className="text-muted">Free</span>
+              </li>
+              <li className="list-group-item d-flex justify-content-between lh-sm">
+                  <div>
+                    <h6 className="my-0">The Total Amount of (including VAT)</h6>
+                  </div>
+                  <span className="fw-bold">$8</span>
               </li>
             </ul>
             <div className="d-grid gap-2 mb-3">
@@ -45,7 +53,7 @@ function App() {
             <form className="card p-2">
               <div className="input-group">
                 <Form.Control type="text" placeholder="Code Promo (optional)" />
-                <Button variant="secondary" type="submit">
+                <Button variant="none" type="button">
                   Redeem
                 </Button>
               </div>
@@ -53,7 +61,7 @@ function App() {
           </div>
           <div class="col-md-7 col-lg-8">
             <h4 class="mb-3 text-start">Cart (3) items</h4>
-            <Cards/>
+            <Cards />
           </div>
         </div>
       </div>

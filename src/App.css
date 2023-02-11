@@ -1,4 +1,6 @@
-
+*{
+  font-family: 'Karla', sans-serif;
+}
 .App {
   text-align: center;
 }

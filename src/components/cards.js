@@ -23,18 +23,18 @@ const Cards = (props) => {
             <div className="d-flex mt-1 mb-3 small">
               <small> {ApiCards.cSize} </small>
             </div>
-              <div className="d-flex mb-0 text-muted small">
+              <div className="d-flex mb-0">
                 <ButtonGroup aria-label="Basic example">
-                    <small><FontAwesomeIcon icon={faTrashCan} /> REMOVE ITEMS</small>
-                    <small><FontAwesomeIcon icon={faHeart} /> MOVE TO WISH LIST</small>
+                    <Button variant="none" size="sm"><FontAwesomeIcon icon={faTrashCan} /> REMOVE ITEMS</Button>
+                    <Button variant="none" size="sm"><FontAwesomeIcon icon={faHeart} /> MOVE TO WISH LIST</Button>
                 </ButtonGroup>
               </div>
           </div>
           <div className="col-md-6 col-lg-3 col-xl-3">
-            <div className="d-flex flex-row align-items-center mb-1">
+            <div className="d-flex align-items-end flex-column mb-1">
               <ButtonGroup aria-label="Basic example">
                 <Button variant="light"> <FontAwesomeIcon icon={faMinusSquare} /> </Button>
-                <Form.Control className="form-control input-number" type="text" name="quant[1]" min={1} max={30}/>
+                <Form.Control className="form-control input-number" type="number" name="quant[1]" min={1} max={30}/>
                 <Button variant="light"> <FontAwesomeIcon icon={faPlusSquare} />  </Button>
               </ButtonGroup>
             </div>
