@@ -1,12 +1,10 @@
 import "./App.css";
-import { Card, Button, Form } from "react-bootstrap";
+import { Button, Form } from "react-bootstrap";
 import Cards from "../src/components/cards.js";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faPlusSquare,
-  faCreditCard,
+  faCreditCard
 } from "@fortawesome/free-regular-svg-icons";
-import ListGroup from "react-bootstrap/ListGroup";
 
 function App() {
   return (

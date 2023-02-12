@@ -33,14 +33,14 @@ const Cards = (props) => {
           <div className="col-md-6 col-lg-3 col-xl-3">
             <div className="d-flex align-items-end flex-column mb-1">
               <ButtonGroup aria-label="Basic example">
-                <Button variant="light"> <FontAwesomeIcon icon={faMinusSquare} /> </Button>
+                <Button variant="none"> <FontAwesomeIcon icon={faMinusSquare} /> </Button>
                 <Form.Control className="form-control input-number" type="number" name="quant[1]" min={1} max={30}/>
-                <Button variant="light"> <FontAwesomeIcon icon={faPlusSquare} />  </Button>
+                <Button variant="none"> <FontAwesomeIcon icon={faPlusSquare} />  </Button>
               </ButtonGroup>
             </div>
             <div className="d-flex align-items-end flex-column mt-4">
               <div class="mt-auto p-2">
-                <h5 className="mb-1 me-1">{ApiCards.cPrize}</h5>
+                <h5 className="mb-1 me-1">${ApiCards.cPrize}</h5>
               </div>
             </div>
           </div>

@@ -8,7 +8,7 @@ const ApiCards = [
     cTitle: "Mint Green Denim Shirt",
     cDesk: "100% cotton",
     cSize: "SIZE M",
-    cPrize: "$33.48",
+    cPrize: 31,
   },
   {
     id: "2",
@@ -16,7 +16,7 @@ const ApiCards = [
     cTitle: "Mint Red Denim Shirt",
     cDesk: "100% cotton",
     cSize: "SIZE L",
-    cPrize: "$35.48",
+    cPrize: 32,
   },
   {
     id: "3",
@@ -24,7 +24,7 @@ const ApiCards = [
     cTitle: "Mint Blue Denim Shirt",
     cDesk: "100% cotton",
     cSize: "SIZE M",
-    cPrize: "$35.88",
+    cPrize: 34,
   },
 ]
 export default ApiCards;
