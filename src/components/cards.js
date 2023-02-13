@@ -5,7 +5,7 @@ import { faMinusSquare, faPlusSquare, faTrashCan, faHeart } from '@fortawesome/f
 
 const Cards = (props) => {
   return ApiCards.slice(0, 3).map((ApiCards, citem) => (
-    <Card className="card shadow-0 border rounded-3 mb-3">
+    <Card className="card shadow-0 border rounded-3 mb-3" key={citem}>
       <Card.Body>
         <div className="row">
           <div className="col-md-12 col-lg-3 col-xl-3 mb-4 mb-lg-0">
